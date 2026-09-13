@@ -94,11 +94,13 @@ ip addr
 
 The assigned IP address and network interface were checked to confirm
 that the virtual machine was connected correctly.
+
 ![IP Interface Verification](ip-verification.png)
 ### Step 5: Test Connectivity
 
 Connectivity between authorized laboratory machines was tested.
 
+![Connectivity Test](KALI-LINUX-NETWORK.PNG)
 Example:
 
 ```bash
@@ -107,8 +109,6 @@ ping 10.0.0.10
 
 The test was used to verify communication between machines inside the
 controlled lab environment.
-
-![Connectivity Test](KALI-LINUX-NETWORK.PNG)
 
 ## Virtual Machine Snapshots
 
