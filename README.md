@@ -101,6 +101,7 @@ that the virtual machine was connected correctly.
 Connectivity between authorized laboratory machines was tested.
 
 ![Connectivity Test](KALI-LINUX-NETWORK.PNG)
+
 Example:
 
 ```bash
