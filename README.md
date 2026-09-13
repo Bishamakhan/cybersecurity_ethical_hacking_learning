@@ -67,7 +67,6 @@ Example private laboratory network:
 
 Oracle VirtualBox was installed and configured as the virtualization
 platform for the cybersecurity laboratory.
-![NAT Network Configuration](NAT-work.png)
 
 ### Step 2: Install Kali Linux
 
