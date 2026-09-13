@@ -79,7 +79,8 @@ security testing and cybersecurity practice.
 
 The virtual machine network adapter was configured using an isolated
 laboratory network.
-![IP Interface Verification](ip-verification.png)
+
+![NAT Network Configuration](NAT-work.png)
 
 ### Step 4: Verify Network Configuration
 
@@ -94,8 +95,7 @@ ip addr
 
 The assigned IP address and network interface were checked to confirm
 that the virtual machine was connected correctly.
-![Connectivity Test](KALI-LINUX-NETWORK.PNG)
-
+![IP Interface Verification](ip-verification.png)
 ### Step 5: Test Connectivity
 
 Connectivity between authorized laboratory machines was tested.
@@ -109,6 +109,7 @@ ping 10.0.0.10
 The test was used to verify communication between machines inside the
 controlled lab environment.
 
+![Connectivity Test](KALI-LINUX-NETWORK.PNG)
 
 ## Virtual Machine Snapshots
 
