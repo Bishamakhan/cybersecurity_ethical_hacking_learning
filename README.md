@@ -72,14 +72,14 @@ platform for the cybersecurity laboratory.
 
 Kali Linux was installed inside a virtual machine and configured for
 security testing and cybersecurity practice.
-![Kali Linux Network Configuration](Documents/KALI-linux-vm.png)
+![Kali Linux Network Configuration](KALI-linux-vm.png.jpeg)
 
 ### Step 3: Configure Network Connection
 
 The virtual machine network adapter was configured using an isolated
 laboratory network.
 
-![NAT Network Configuration](Documents/NAT-work.png)
+![NAT Network Configuration](NAT-work.png.jpeg)
 
 ### Step 4: Verify Network Configuration
 
@@ -95,12 +95,12 @@ ip addr
 The assigned IP address and network interface were checked to confirm
 that the virtual machine was connected correctly.
 
-![IP Interface Verification](Documents/ip-verification.png)
+![IP Interface Verification](ip-verification.png.jpeg)
 ### Step 5: Test Connectivity
 
 Connectivity between authorized laboratory machines was tested.
 
-![Connectivity Test](Documents/KALI-LINUX-NETWORK.PNG)
+![Connectivity Test](KALI-LINUX-NETWORK.PNG.jpeg)
 
 
 Example:
