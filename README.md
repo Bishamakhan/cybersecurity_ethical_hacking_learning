@@ -67,16 +67,19 @@ Example private laboratory network:
 
 Oracle VirtualBox was installed and configured as the virtualization
 platform for the cybersecurity laboratory.
+![NAT Network Configuration](NAT-work.png)
 
 ### Step 2: Install Kali Linux
 
 Kali Linux was installed inside a virtual machine and configured for
 security testing and cybersecurity practice.
+![Kali Linux Network Configuration](KALI-linux-vm.png)
 
 ### Step 3: Configure Network Connection
 
 The virtual machine network adapter was configured using an isolated
 laboratory network.
+![IP Interface Verification](ip-verification.png)
 
 ### Step 4: Verify Network Configuration
 
@@ -91,6 +94,7 @@ ip addr
 
 The assigned IP address and network interface were checked to confirm
 that the virtual machine was connected correctly.
+![Connectivity Test](KALI-LINUX-NETWORK.PNG)
 
 ### Step 5: Test Connectivity
 
@@ -104,6 +108,7 @@ ping 10.0.0.10
 
 The test was used to verify communication between machines inside the
 controlled lab environment.
+
 
 ## Virtual Machine Snapshots
 
