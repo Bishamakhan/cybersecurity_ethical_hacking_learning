@@ -77,19 +77,19 @@ collected during the initial stage of a security assessment.
 
 #### 🔹 WHOIS
 
-![WHOIS Results](whois.png)
+![WHOIS Results](whois.png.jpeg)
 
 #### 🔹 WhatWeb
 
-![WhatWeb Results](whatweb.png)
+![WhatWeb Results](whatweb.png.jpeg)
 
 #### 🔹 cURL – HTTP Response Headers
 
-![cURL Results](curl.png)
+![cURL Results](curl.png.jpeg)
 
 #### 🔹 Wafw00f – WAF Detection
 
-![Wafw00f Results](wafw00f.png)
+![Wafw00f Results](wafw00f.png.jpeg)
 
 ---
 
@@ -108,11 +108,11 @@ The practical work included:
 
 - #### 🔹 Zenmap Network Topology
 
-![Zenmap Topology](zenmap.png)
+![Zenmap Topology](zenmap.png.jpeg)
 
 #### 🔹 Nmap Scan Output
 
-![Zenmap Scan Output](zenmap-scan-output.png)
+![Zenmap Scan Output](zenmap-scan-output.png.jpeg)
 
 
 ---
