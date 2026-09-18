@@ -1,6 +1,11 @@
-# Week 02 – Footprinting & Network Scanning
+# CYBERSECURITY & ETHICAL HACKING REPORT
 
-## 🔐 Cybersecurity & Ethical Hacking
+## FOOTPRINTING & NETWORK SCANNING
+
+### Week 02 • Cybersecurity Practical Project
+
+---
+
 
 Welcome to Week 02 of my Cybersecurity & Ethical Hacking learning journey.
 
@@ -9,13 +14,22 @@ Reconnaissance, and Network Scanning using an authorized lab environment.
 
 ---
 
-## 👤 Student Information
+## 📋 Report Details
 
-**Name:** Bishama Khan  
-**Program:** Cybersecurity & Ethical Hacking  
-**Organization:** NETWORKWALKS  
-**Batch:** B083  
-**Week:** 02  
+| Report Field | Details |
+|---|---|
+| Report Field | Details |
+|---|---|
+| **Analyst** | Bishama Khan |
+| **Program** | Cybersecurity & Ethical Hacking |
+| **Organization** | NETWORKWALKS |
+| **Batch** | B083 |
+| **Week** | 02 |
+| **Practical Focus** | Footprinting & reconnaissance, network discovery |
+| **Primary Platforms** | Kali Linux and Windows |
+| **Tools Covered** | WHOIS, WhatWeb, Nslookup, cURL, Wafw00f, DNSRecon, Zenmap |
+
+---
 
 ---
 
