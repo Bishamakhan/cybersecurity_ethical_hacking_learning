@@ -75,6 +75,22 @@ The activities included:
 These activities helped me understand how information can be
 collected during the initial stage of a security assessment.
 
+#### 🔹 WHOIS
+
+![WHOIS Results](whois.png)
+
+#### 🔹 WhatWeb
+
+![WhatWeb Results](whatweb.png)
+
+#### 🔹 cURL – HTTP Response Headers
+
+![cURL Results](curl.png)
+
+#### 🔹 Wafw00f – WAF Detection
+
+![Wafw00f Results](wafw00f.png)
+
 ---
 
 ### 2. Network Scanning with Zenmap
@@ -89,6 +105,15 @@ The practical work included:
 - Discovering active hosts
 - Reviewing IP and MAC address information
 - Understanding the network topology
+
+- #### 🔹 Zenmap Network Topology
+
+![Zenmap Topology](zenmap.png)
+
+#### 🔹 Nmap Scan Output
+
+![Zenmap Scan Output](zenmap-scan-output.png)
+
 
 ---
 
