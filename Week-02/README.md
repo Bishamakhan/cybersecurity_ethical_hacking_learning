@@ -18,18 +18,11 @@ Reconnaissance, and Network Scanning using an authorized lab environment.
 
 | Report Field | Details |
 |---|---|
-| Report Field | Details |
-|---|---|
-| **Analyst** | Bishama Khan |
-| **Program** | Cybersecurity & Ethical Hacking |
-| **Organization** | NETWORKWALKS |
-| **Batch** | B083 |
-| **Week** | 02 |
+| **Student** | Bishama Khan |
 | **Practical Focus** | Footprinting & reconnaissance, network discovery |
 | **Primary Platforms** | Kali Linux and Windows |
 | **Tools Covered** | WHOIS, WhatWeb, Nslookup, cURL, Wafw00f, DNSRecon, Zenmap |
 
----
 
 ---
 
