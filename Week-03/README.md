@@ -90,7 +90,7 @@ Perform PDF hash extraction and password auditing using the browser-based tools 
 
 3. The tool identified the document as encrypted and generated a crackable PDF hash locally.
 
-![pdf_hash_extraction](pdf_hash_extraction.png.png)
+![pdf_hash_extraction](pdf_hash_extraction3.png.png)
 
 4. Copied the generated PDF hash and opened the **NetworkWalks Password Cracker**.
 
