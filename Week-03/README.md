@@ -46,7 +46,7 @@ Recover the password of `My-Locked-PDF3.pdf` using **John the Ripper** and **Joh
 
 3. The PDF was detected as encrypted and a crackable PDF hash was generated in a `pdf2john / hashcat-compatible` format.
 
-![pdf_hash_extraction](pdf_hash_extraction.png)
+![pdf_hash_extraction](pdf_hash_extraction.png.png)
 
 4. Copied the generated hash and saved it into a text file for use with John the Ripper.
 
@@ -58,7 +58,7 @@ Recover the password of `My-Locked-PDF3.pdf` using **John the Ripper** and **Joh
 
 7. After recovering the password, opened `My-Locked-PDF3.pdf` in Adobe Acrobat Reader and entered the recovered password to verify access.
 
-![unlocked_pdf_flag](unlocked_pdf_flag.jpg)
+![unlocked_pdf_flag](unlocked_pdf_flag.jpg.png)
 
 ### Result
 
@@ -90,7 +90,7 @@ Perform PDF hash extraction and password auditing using the browser-based tools 
 
 3. The tool identified the document as encrypted and generated a crackable PDF hash locally.
 
-![pdf_hash_extraction](pdf_hash_extraction.png)
+![pdf_hash_extraction](pdf_hash_extraction.png.png)
 
 4. Copied the generated PDF hash and opened the **NetworkWalks Password Cracker**.
 
@@ -98,7 +98,7 @@ Perform PDF hash extraction and password auditing using the browser-based tools 
 
 6. Started the dictionary-based password-auditing process using the available password list.
 
-![networkwalks_web_cracker](networkwalks_web_cracker.jpg)
+![networkwalks_web_cracker](networkwalks_web_cracker.jpg.png)
 
 7. The tool tested password candidates sequentially until the correct password was identified.
 
