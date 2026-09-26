@@ -40,7 +40,7 @@ Recover the password of `My-Locked-PDF3.pdf` using **John the Ripper** and **Joh
 
 1. Downloaded the **John the Ripper Jumbo Windows build** and configured the Johnny GUI to use the `john.exe` file from the extracted `run` directory.
 
-![johnny_settings_path_config](johnny_settings_path_config.png)
+![johnny_settings_path_config](johnny_settings_path_config.png.png)
 
 2. Selected the protected `My-Locked-PDF3.pdf` file in the NetworkWalks Hash Calculator.
 
