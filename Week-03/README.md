@@ -46,7 +46,6 @@ Recover the password of `My-Locked-PDF3.pdf` using **John the Ripper** and **Joh
 
 3. The PDF was detected as encrypted and a crackable PDF hash was generated in a `pdf2john / hashcat-compatible` format.
 
-![pdf_hash_extraction](pdf_hash_extraction.png.png)
 
 4. Copied the generated hash and saved it into a text file for use with John the Ripper.
 
