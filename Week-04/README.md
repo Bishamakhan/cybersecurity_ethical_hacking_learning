@@ -78,3 +78,39 @@ Default wordlists failed on the third report. Switching to the specialized **JTR
 1. **Decryption:** The protected PDF was decrypted using `qpdf`:
    ```bash
    qpdf --password='!@#$%^&' --decrypt patient_report_3.pdf report3_open.pdf
+2. **Metadata Analysis & Database Exposure:**
+   * **Metadata Extraction:** Running `exiftool` on the decrypted PDF revealed the author (`j.malik`) and an embedded comment:
+     > *"DB backup moved to /old before site migration, do not delete"*
+   * **Directory Listing:** Navigating to `https://medirozahospital.com/old/` confirmed enabled directory listing, exposing `mediroza_db_backup_2019.sql`.
+   * **Data Impact:** Downloading the raw `.sql` file exposed unencrypted staff records, administrator credentials (`j.malik`), monthly salary data, and shareholder percentages.
+
+---
+
+## Key Vulnerabilities & Risk Summary
+
+| Finding ID | Vulnerability Description | Location / Path | Severity |
+| :--- | :--- | :--- | :--- |
+| **VULN-01** | SQL Injection (Authentication Bypass) | `/patient/login.php` | **CRITICAL** |
+| **VULN-02** | Unrestricted Backup Exposure & Directory Listing | `/old/` | **CRITICAL** |
+| **VULN-03** | Plaintext Confidential Data Disclosure | `/old/mediroza_db_backup_2019.sql` | **CRITICAL** |
+| **VULN-04** | Weak PDF Document Encryption | `/patient/reports/` | **HIGH** |
+| **VULN-05** | Sensitive Metadata Leakage in Distributable PDFs | `patient_report_3.pdf` | **MEDIUM** |
+| **VULN-06** | Inconsistent Authentication Error (User Enumeration) | `/patient/login.php` | **MEDIUM** |
+
+---
+
+## Remediation & Security Recommendations
+
+* **Parameterized Queries:** Use prepared statements (e.g., PDO or `mysqli` prepared statements) for all database operations to permanently patch SQL injection.
+* **Disable Directory Browsing:** Turn off directory listing in the web server configuration (e.g., `Options -Indexes` in Apache).
+* **Generic Error Messages:** Standardize login responses to `Invalid username or password` regardless of which credential fails.
+* **Metadata Sanitization:** Integrate automated file stripping tools (`exiftool -all= filename.pdf`) into the document generation pipeline before publishing files.
+* **Secure Storage:** Store database backups and sensitive exports outside the public web root (`/var/www/html/`).
+
+---
+
+## Tools Used
+
+* **Web Assessment:** Browser Developer Tools, cURL, Burp Suite
+* **Password Cracking:** Networkwalks Hash Calculator & Cracker, John the Ripper (JTR)
+* **File Analysis & Decryption:** `exiftool`, `qpdf`, `wget`
