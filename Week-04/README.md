@@ -35,19 +35,19 @@ The primary goal was to evaluate the application's attack surface, bypass authen
 #### 1. Endpoint Discovery via `robots.txt`
 Inspecting the application's `/robots.txt` file revealed hidden directories disallowed for web crawlers, exposing `/patient/`, `/staff/`, and `/old/`.
 
-![Robots.txt Reconnaissance](01_recon_robots_txt.png)
+![Robots.txt Reconnaissance](01_recon_robots_txt.png.png)
 
 #### 2. Username Enumeration Vulnerability
 The login endpoint (`/patient/login.php`) provided explicit and inconsistent error responses, allowing an attacker to enumerate valid accounts.
 
 * **Invalid Username Attempt:** Displays `Username not found`.
-  ![Invalid Username Testing](02_user_enum_invalid_username.png)
+  ![Invalid Username Testing](02_user_enum_invalid_username.png.png)
 
 * **Testing Valid Account:**
-  ![Testing Admin User](03_user_enum_testing_admin.png)
+  ![Testing Admin User](03_user_enum_testing_admin.png.png)
 
 * **Valid Account Confirmation:** Entering `admin` with a dummy password returns `Incorrect password`, confirming `admin` is a registered user.
-  ![Incorrect Password Error](04_user_enum_incorrect_password.png)
+  ![Incorrect Password Error](04_user_enum_incorrect_password.png.png)
 
 #### 3. SQL Injection Login Bypass
 Inputting a single quote (`admin'`) in the username field broke the backend database query, confirming SQL injection. Supplying `admin'` as the username bypassed authentication completely, granting full access to the patient portal and revealing encrypted reports (`patient_report_1.pdf`, `patient_report_2.pdf`, `patient_report_3.pdf`).
@@ -60,16 +60,16 @@ The downloaded patient lab reports were protected with 128-bit encryption. Passw
 
 #### 1. Report 1 Password Recovery
 * **Password:** `123456`
-  ![Report 1 Cracked](05_crack_report1_password.png)
+  ![Report 1 Cracked](05_crack_report1_password.png.png)
 
 #### 2. Report 2 Password Recovery
 * **Password:** `password`
-  ![Report 2 Cracked](06_crack_report2_password.png)
+  ![Report 2 Cracked](06_crack_report2_password.png.png)
 
 #### 3. Report 3 Password Recovery (Extended Dictionary Attack)
 Default wordlists failed on the third report. Switching to the specialized **JTR wordlist** successfully recovered the complex key string.
 * **Password:** `!@#$%^&`
-  ![Report 3 Cracked](07_crack_report3_custom_wordlist.png)
+  ![Report 3 Cracked](07_crack_report3_custom_wordlist.png.png)
 
 ---
 
