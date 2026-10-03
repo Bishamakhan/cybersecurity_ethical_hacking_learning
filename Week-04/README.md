@@ -114,3 +114,15 @@ Default wordlists failed on the third report. Switching to the specialized **JTR
 * **Web Assessment:** Browser Developer Tools, cURL, Burp Suite
 * **Password Cracking:** Networkwalks Hash Calculator & Cracker, John the Ripper (JTR)
 * **File Analysis & Decryption:** `exiftool`, `qpdf`, `wget`
+
+## Assessment Metadata & Program Scope
+
+* **Training Program:** Networkwalks Cybersecurity Career Track
+* **Cohort / Batch:** Batch B082 (Week 4 Assessment)
+* **Lead Mentor:** Sir Waqas Karim (CCIE)
+
+---
+
+## Legal Notice & Educational Scope
+
+> **Warning:** This repository is maintained exclusively for academic, research, and professional portfolio demonstration. All security tests, vulnerability disclosures, and dynamic attacks demonstrated herein were executed inside an authorized sandbox environment operated by **Networkwalks**. Applying these assessment techniques against production assets or unauthorized endpoints without formal permission is strictly prohibited.
