@@ -35,7 +35,7 @@ The primary goal was to evaluate the application's attack surface, bypass authen
 #### 1. Endpoint Discovery via `robots.txt`
 Inspecting the application's `/robots.txt` file revealed hidden directories disallowed for web crawlers, exposing `/patient/`, `/staff/`, and `/old/`.
 
-![Robots.txt Reconnaissance]((01_recon_robots_txt.png).png)
+![Robots.txt Reconnaissance](01_recon_robots_txt.png.png)
 
 #### 2. Username Enumeration Vulnerability
 The login endpoint (`/patient/login.php`) provided explicit and inconsistent error responses, allowing an attacker to enumerate valid accounts.
